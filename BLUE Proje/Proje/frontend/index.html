@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Anasayfa</title>
+    <link rel="shortcut icon" href="./images/image-236x236.jpg" type="image/x-icon">        <!-- Favicon ekleme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       <!-- Font Awesome CSS dosyası ekleme -->
+    <link rel="stylesheet" href="./styles/index.css">       <!-- Yerel CSS dosyasını ekleme -->
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <div id="background">
+            <a href="index.html">
+                <div id="logo">                 <!-- Logo ve anasayfa bağlantısı -->
+                    <img src="./images/image-1036x236.jpg" alt="">
+                    <span></span>
+                </div>
+            </a>
+            <div id="con">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="lobby.html" target="_blank">Giriş</a>                  <!-- Diğer sayfalara bağlantılar -->
+                <a href="login.html" target="_blank">Kayıt Ol</a>
+                <a href="profile.html" target="_blank">Hakkımda</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ana bölüm -->
+    <div id="main-section">
+        <!-- Sol bölüm -->
+        <div id="left-section">
+            <div>
+                <!-- Platform hakkında açıklama ve görüntü bölümü-->
+                <p><span>" BLUE sizlere neler sağlar ? "</span>- Bu platformda sevdikleriniz ile birlikte görüntülü sohbet edebilir, mesajlaşabilir ve ekran paylaşımı yapabilirsiniz.</p>
+                <img src="./images/ved2.JPG" alt="">
+            </div>
+            <div>
+                <img src="./images/ved1.JPG" alt="">
+                <p><span>" BLUE sizleri asla yanlız bırakmaz. "</span>- Platformlar arası çalışma özelliği ile her zaman bir tık uzağınızda, ister mobil ister web... </p>
+            </div>
+            <div>
+                <p><span>" BLUE da sınır yoktur. "</span>- İstediğiniz kadar kullanıcı ile aynı anda çevrimiçi iletişim halinde olabilirsiniz. </p>
+                <img src="./images/ved5.JPG" alt="">
+            </div>
+            <div>
+                <img src="./images/ved4.JPG" alt="">
+                <p><span>" Hemen sizde Katılın "</span>- Bu benzersiz platformda sevdiklerinz ile vakit geçirmeye başlayın.</p>
+            </div>
+            <div>
+                <p><span>" Copyright © 2024 Tüm Hakları Saklıdır. "</span>- Mevcut telif hakları mevzuatına göre bütün hakların eser sahibine aittir. </p>
+                <img src="./images/ved3.JPG" alt="">
+            </div>
+        </div>
+        <!-- Sağ bölüm -->
+        <div id="right-section">
+            <div id="back">
+                <!-- Sohbet karşılama mesajı ve görüntü -->
+                <p>WELCOME TO BLUE ! 👋</p><br>
+                <img src="./images/mainimage.png" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    // Gezinti çubuğunu mobil görünümde açıp kapatan fonksiyon
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</html>
+```

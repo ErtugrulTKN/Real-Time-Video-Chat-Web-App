@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giriş yap veya Kayıt ol</title>
+    <link rel="shortcut icon" href="./images/image-236x236.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/navbar_login.css">
+    <!-- Font Awesome CSS dosyasını ekleme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- SweetAlert2 kütüphanesini ekleme -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <div id="background">
+            <div id="logo">
+                <!-- Anasayfaya yönlendiren logo -->
+                <a href="index.html"><img src="./images/image-1036x236.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ana içerik bölümü -->
+    <div id="main">
+        <!-- Sol bölüm: Resim -->
+        <div id="left">
+            <img class="leftalimg" src="./images/loginimage.png" alt="">
+        </div>
+
+        <!-- Sağ bölüm Formlar -->
+        <div class="container">
+            <!-- Giriş formu -->
+            <div class="form active" id="login-form">
+                <h2>Giriş</h2>
+                <form>
+                    <!-- Hata mesajı -->
+                    <div class="error-message" id="login-error"></div>
+                    <!-- E-posta ve Şifre alanları -->
+                    <input type="text" id="loginemail" placeholder="E-posta">
+                    <input type="password" id="loginPassword" placeholder="Şifre">
+                    <!-- Giriş butonu -->
+                    <button type="submit">Giriş</button>
+                </form>
+                <!-- Kayıt formuna geçiş bağlantısı -->
+                <div class="toggle" id="signup-toggle">Hesabınız yok mu ? Hemen bir tane oluşturun.</div>
+            </div>
+
+            <!-- Kayıt formu -->
+            <div class="form" id="signup-form">
+                <h2>Kayıt ol</h2>
+                <form>
+                    <!-- Hata mesajı -->
+                    <div class="error-message" id="signup-error"></div>
+                    <!-- Kullanıcı adı, E-posta ve Şifre alanları -->
+                    <input type="text" id="username" placeholder="Kullanıcı adı">
+                    <input type="email" id="email" placeholder="E-posta">
+                    <input type="password" id="Password" placeholder="Şifre">
+                    <!-- Kayıt ol butonu -->
+                    <button type="submit">Kayıt ol</button>
+                </form>
+                <!-- Giriş formuna geçiş bağlantısı -->
+                <div class="toggle" id="login-toggle">Zaten bir hesabınız var mı ? Giriş yapın.</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript dosyasını ekleme -->
+    <script src="./scripts/login.js"></script>
+</body>
+</html>
+```

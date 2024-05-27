@@ -1,0 +1,25 @@
+Bu bir `package.json` dosyası. Bir Node.js projesinin bağımlılıklarını ve projeyle ilgili diğer bilgileri içerir. İşte her bir anahtarın açıklaması:
+
+- `"name"`: Projenin adını belirtir.
+- `"version"`: Projenin sürüm numarasını belirtir.
+- `"description"`: Projenin kısa açıklamasını içerir. Boş olabilir.
+- `"main"`: Projede ana dosyanın adını belirtir. Bu dosya projenin giriş noktasıdır.
+- `"scripts"`: Proje için çalıştırılabilir komutları içerir. Örneğin, `test` komutu testlerin çalıştırılmasını sağlar, `server` komutu ise sunucunun çalıştırılmasını sağlar.
+- `"keywords"`: Projenin anahtar kelimelerini içerir. Boş olabilir.
+- `"author"`: Projenin yazarını belirtir. Boş olabilir.
+- `"license"`: Projenin lisansını belirtir.
+- `"dependencies"`: Projenin bağımlılıklarını listeler. Bu kısımda belirtilen paketler, projenin çalışması için gereklidir.
+
+Bu `package.json` dosyasına göre, projenin bağımlılıkları şunlardır:
+
+- `bcrypt`: Şifreleme ve kriptografi işlemleri için kullanılır.
+- `cookie-parser`: HTTP isteklerindeki çerezleri işlemek için kullanılır.
+- `cors`: Cross-Origin Resource Sharing (CORS) için kullanılır. Frontend ile backend arasındaki bağlantıyı kolaylaştırır.
+- `dotenv`: Ortam değişkenlerini yüklemek için kullanılır.
+- `express`: Web uygulamaları oluşturmak için popüler bir web çatısıdır.
+- `express-winston`: HTTP isteklerini ve yanıtlarını günlüğe kaydetmek için kullanılır.
+- `jsonwebtoken`: JSON Web Token (JWT) oluşturmak ve doğrulamak için kullanılır.
+- `mongoose`: MongoDB için ODM (Object Data Modeling) kütüphanesidir. MongoDB veritabanına bağlanmayı sağlar.
+- `node-fetch`: Node.js ortamında HTTP istekleri yapmak için kullanılır.
+- `winston`: Node.js uygulamaları için esnek bir günlük kayıt kütüphanesidir.
+- `winston-mongodb`: MongoDB'ye günlük kayıtlarını kaydetmek için winston ile entegre edilmiş bir taşıyıcıdır.
