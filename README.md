@@ -61,7 +61,7 @@ Proje Kurulumu
 
 Bu projeye başlamak için şu adımları izleyin:
 
-Depoyu klonlayın: git clone https://github.com/ErtugrulTKN/internet-programciligi-2-proje
+Depoyu klonlayın: git clone https://github.com/ErtugrulTKN/Web-Programming-Project
 Bağımlılıkları yükleyin: npm install
 Ortam değişkenlerini ayarlayın:
 MONGODB_URI - MongoDB bağlantı URI'si
