@@ -1,95 +1,78 @@
 #BLUE#
 
-Bu Proje Gerçek zamanlı bir görüntülü sohbet uygulamasıdır. Uygulama, kullanıcıların görüntülü sohbet odaları oluşturmasına ve diğer kullanıcılarla gerçek zamanlı olarak iletişim kurmasına olanak tanır. Genel anlamda Discord veya Messenger uygulamaları tarzında Görüntülü sohbet, kamera paylaşımı, ekran paylaşımı, canlı chat gibi özellikler içeren bir yapıdadır.
+This Project is a Real-time video chat application. The application allows users to create video chat rooms and communicate with other users in real time. In general, it has a structure that includes features such as Video chat, camera sharing, screen sharing, live chat, etc., similar to Discord or Messenger applications.
 
-Proje Aşağıdakiler kullanılarak geliştirilmiştir.
+The Project is developed using the following.
 
-Node.js
-Express.js
-MongoDB
-Redis
-Agora API
-Socket.io
-HTML
-CSS
-JavaScript
-Özellikleri
+Node.js Express.js MongoDB Redis Agora API Socket.io HTML CSS JavaScript Features
 
-Bilgi ve görsellerin bulunduğu ana sayfa.
+Home page with information and visuals.
 
-Logo ve oturum açma/kaydolma düğmeleri içeren gezinme çubuğu.
+Navigation bar with logo and login/sign up buttons.
 
-Kayıt olmak ve giriş yapmak için formların bulunduğu oturum açma ve kayıt sayfaları.
+Login and registration pages with forms to register and log in.
 
-Yetkilendirme, önbellek ve JWT belirteç sistemini depolamak ve belirteci yenilemek için Redis ile arka uçta gerçekleştirilir.
+Authorization is done in the backend with Redis to store and refresh the token, cache and JWT token system.
 
-MongoDB'de saklanan tüm veriler.
+All data stored in MongoDB.
 
-Kullanıcıların başkalarıyla görüntülü sohbet yapmak için bir oda oluşturabilecekleri lobi sayfası.
+Lobby page where users can create a room to video chat with others.
 
-Katılımcıların listesini, video akışını ve sohbet oturumunu içeren ana açılış sayfası.
+Main landing page with list of participants, video stream and chat session.
 
-Agora API video ve mesaj kısımları için kullanılmaktadır.
+Agora API is used for video and message sections.
 
-Ana sayfaya yönlendirmek için oda oluşturma ve video akışı açılış sayfasındaki çıkış düğmesi.
+Exit button on room creation and video streaming landing page to redirect to home page.
 
-Katılımcı listesi, mevcut kullanıcı dahil odadaki tüm kullanıcıların adlarını görüntüler.
+Participant list displays names of all users in the room including current user.
 
-Chatbot, odaya girdiğinde kullanıcının adının yer aldığı bir karşılama mesajı gönderir.
+Chatbot sends a welcome message with user’s name when entering the room.
 
-Kullanıcılar tarayıcıda mikrofon ve kamera izni vererek yayına katılabilir.
+Users can join the broadcast by granting microphone and camera permission in browser.
 
-Kullanıcının videosu açılış sayfasının orta kısmında kare kutular içerisinde görüntülenir.
+User’s video is displayed in square boxes in the middle of the landing page.
 
-Kamerayı açmak/kapatmak, sesi kapatmak/açmak, ekran paylaşımı ve yayından ayrılmak için dört seçenek (geçiş işlevleri) sağlanmıştır.
+Four options (toggle functions) are provided for camera on/off, mute/unmute, screen sharing and leaving the broadcast.
 
-Chatbot, kullanıcı odaya katıldığında veya odadan çıktığında mesaj gönderir.
+Chatbot sends message when user joins or leaves the room.
 
-Bir kullanıcı sohbette mesaj gönderdiğinde, mesaj içeren kullanıcı adı sohbet bölümünde görüntülenir.
+When a user sends a message in the chat, username with message is displayed in the chat section.
 
-Web sitesi tamamen duyarlı olacak ve çeşitli ekran boyutlarına göre optimize edilecek şekilde tasarlanmıştır.
+Website is designed to be fully responsive and optimized for various screen sizes.
 
-Ana sayfa: Ana sayfa tamamen duyarlı olacak ve çeşitli ekran boyutlarına göre optimize edilecek şekilde tasarlanmıştır. Resimler, metin ve gezinme çubuğu, ekran boyutuna sığacak şekilde dinamik olarak ayarlanır; gezinme çubuğu, daha küçük ekranlarda bir hamburger menüsüne dönüşür. Farklı ekran çözünürlüklerine uygun şekilde ölçeklendirilmiş resimlerle düzen temiz ve okunması kolaydır.
+Homepage: Homepage is designed to be fully responsive and optimized for various screen sizes. Images, text and navigation bar dynamically adjust to fit screen size; navigation bar turns into a hamburger menu on smaller screens. The layout is clean and easy to read, with images scaled to fit different screen resolutions.
 
-Oturum Açma/Kayıt sayfaları: Oturum açma ve kaydolma sayfaları da tamamen duyarlı olacak ve farklı ekran boyutları için optimize edilecek şekilde tasarlanmıştır. Form alanları ve düğmeler farklı ekran çözünürlüklerine uygun şekilde ölçeklendirilerek formlar ve görüntüler ekran boyutuna uyacak şekilde dinamik olarak ayarlanır. Kullanıcıyı yönlendirecek açık talimatlar ve hata mesajları içeren sayfalarda gezinmek kolaydır ve kullanıcı dostudur.
+Login/Register pages: The login and signup pages are also designed to be fully responsive and optimized for different screen sizes. The forms and images dynamically adjust to fit the screen size, with form fields and buttons scaling to fit different screen resolutions. The pages are easy to navigate and user-friendly, with clear instructions and error messages to guide the user.
 
-Lobi sayfası: Lobi sayfası tamamen duyarlı olacak ve farklı ekran boyutları için optimize edilecek şekilde tasarlanmıştır. Yeni bir oda oluşturma formu ve mevcut odaların listesi, farklı ekran çözünürlüklerine uygun şekilde ölçeklendirilmiş form alanları ve düğmelerle ekran boyutuna uyacak şekilde dinamik olarak ayarlanır. Açık talimatlar ve hata mesajları içeren sayfa temiz ve gezinmesi kolaydır.
+Lobby page: The lobby page is designed to be fully responsive and optimized for different screen sizes. The form to create a new room and the list of available rooms dynamically adjust to fit the screen size, with form fields and buttons scaled to fit different screen resolutions. The page is clean and easy to navigate, with clear instructions and error messages.
 
-Ana açılış sayfası: Ana açılış sayfası da tamamen duyarlı olacak ve farklı ekran boyutları için optimize edilecek şekilde tasarlanmıştır. Video akışı ve sohbet oturumu, düzen ve biçimlendirmenin farklı ekran çözünürlüklerine uygun şekilde ölçeklendirilmesiyle ekran boyutuna uyacak şekilde dinamik olarak ayarlanır. Sayfanın sol tarafındaki katılımcı listesi de duyarlıdır; isimler ve avatarlar farklı ekran boyutlarına uygun şekilde ölçeklendirilmiştir. Kullanıcıyı yönlendirecek açık talimatlar ve hata mesajları içeren sayfada gezinmek kolaydır ve kullanıcı dostudur.
+Main landing page: The main landing page is also designed to be fully responsive and optimized for different screen sizes. The video feed and chat session dynamically adjust to fit the screen size, with the layout and formatting scaling to fit different screen resolutions. The participant list on the left side of the page is also responsive, with names and avatars scaled to fit different screen sizes. The page is easy to navigate and user-friendly, with clear instructions and error messages to guide the user.
 
-Proje Kurulumu
+#Project Setup#
 
-Bu projeye başlamak için şu adımları izleyin:
+To start this project, follow these steps:
 
-Depoyu klonlayın: git clone https://github.com/ErtugrulTKN/Web-Programming-Project
-Bağımlılıkları yükleyin: npm install
-Ortam değişkenlerini ayarlayın:
-MONGODB_URI - MongoDB bağlantı URI'si
-REDIS_URL - Redis bağlantı URL'si
-JWT_SECRET - JWT gizli anahtarı
-JWT_EXPIRY - JWT jetonunun geçerlilik süresi (ör. "1 gün")
-AGORA_APP_ID - Agora.io uygulama kimliği
-Uygulamayı çalıştırın: npm start
-Kullanım
+Clone the repository: git clone https://github.com/ErtugrulTKN/Web-Programming-Project Install dependencies: npm install Set environment variables: MONGODB_URI - MongoDB connection URI REDIS_URL - Redis connection URL JWT_SECRET - JWT secret key JWT_EXPIRY - JWT token expiration time (e.g. "1 day") AGORA_APP_ID - Agora.io application ID Run the application: npm start Usage
 
-Yeni bir hesap oluşturmak için ana sayfadaki "Kayıt Ol" butonuna tıklayın ve kayıt formunu adınızla doldurun. e-posta adresi ve şifre.
+To create a new account, click on the "Register" button on the homepage and fill in the registration form with your name, email address and password.
 
-Hesabınızı oluşturmak için "Gönder" düğmesini tıklayın.
+Click on the "Submit" button to create your account.
 
-Hesabınıza giriş yapmak için ana sayfadaki "Oturum aç" butonuna tıklayın.
+Click on the "Sign in" button on the homepage to log in to your account.
 
-E-posta adresinizi ve şifrenizi girin, ardından "Oturum aç" düğmesini tıklayın.
+Enter your email address and password, then click the "Sign in" button.
 
-Giriş yaptığınızda, bir oda oluşturabileceğiniz veya mevcut bir odaya katılabileceğiniz lobi sayfasına yönlendirileceksiniz.
+Once you log in, you will be taken to the lobby page where you can create a room or join an existing room.
 
-Bir oda oluşturmak için bir oda adı girin ve "Oda Oluştur" düğmesini tıklayın. Odanın açılış sayfasına yönlendirileceksiniz.
+To create a room, enter a room name and click the "Create Room" button. You will be taken to the room's landing page.
 
-Odaya girdiğinizde sayfanın sol tarafındaki katılımcı listesinde isminizin listelendiğini, sayfanın sağ tarafındaki sohbet bölümünde ise sohbet botundan gelen bir hoş geldiniz mesajını göreceksiniz.
+When you enter the room, you will see your name listed in the participant list on the left side of the page, and a welcome message from the chatbot in the chat section on the right side of the page.
 
-Video akışına katılmak için "Yayına Katıl" düğmesini tıklayın. Tarayıcının mikrofonunuza ve kameranıza erişmesine izin vermeniz istenecektir.
+Click the "Join Broadcast" button to join the video stream. You will be asked to allow the browser to access your microphone and camera.
 
-İzin verdiğinizde videonuz, diğer katılımcıların videolarıyla birlikte açılış sayfasının ortasındaki kare bir kutuda görünecektir.
+Once you grant permission, your video will appear in a square box in the middle of the landing page along with the videos of other participants.
 
-Sayfanın alt kısmında, geçiş işlevlerine sahip dört seçenek vardır: kamerayı aç/kapat, sesi kapat/aç, ekran paylaşımı ve yayından ayrıl. Sohbet sırasında videonuzu ve sesinizi kontrol etmek için bu seçenekleri kullanabilirsiniz.
+At the bottom of the page, there are four options with toggle functions: turn camera on/off, mute/unmute, screen share, and leave broadcast. You can use these options to control your video and audio during the chat.
 
-Bir katılımcının odaya katılması veya odadan çıkması durumunda sohbet botu, sohbet bölümünde sizi bir mesajla bilgilendirecektir. Bir katılımcı sohbet bölümünde mesaj gönderirse kullanıcı adı ve mesajı görüntülenecektir.
+The chatbot will notify you with a message in the chat section if a participant joins or leaves the room. If a participant sends a message in the chat section, their username and message will be displayed.
+
